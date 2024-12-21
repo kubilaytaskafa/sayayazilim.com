@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Etiketleri -->
+    <title>
+      Saya Yazılım | Profesyonel Yazılım Çözümleri ve Web Geliştirme Hizmetleri
+    </title>
+
+    <meta
+      name="description"
+      content="20 yıllık deneyimle özel yazılım çözümleri, web geliştirme, mobil uygulama ve kurumsal yazılım hizmetleri sunuyoruz. Profesyonel ve yenilikçi çözümler için Saya Yazılım."
+    />
+    <meta
+      name="keywords"
+      content="yazılım şirketi, web geliştirme, mobil uygulama, özel yazılım, kurumsal yazılım, yazılım danışmanlığı, Antalya yazılım, işletme yazılımları"
+    />
+    <meta name="author" content="Saya Yazılım" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Meta Etiketleri (Sosyal Medya) -->
+    <meta
+      property="og:title"
+      content="Saya Yazılım | Profesyonel Yazılım Çözümleri"
+    />
+    <meta
+      property="og:description"
+      content="20 yıllık deneyimle özel yaz��lım çözümleri, web geliştirme ve kurumsal yazılım hizmetleri sunuyoruz."
+    />
+    <meta property="og:image" content="images/saya-logo.webp" />
+    <meta property="og:url" content="https://sayayazilim.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Etiketleri -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Saya Yazılım | Profesyonel Yazılım Çözümleri"
+    />
+    <meta
+      name="twitter:description"
+      content="20 yıllık deneyimle özel yazılım çözümleri ve kurumsal yazılım hizmetleri."
+    />
+    <meta name="twitter:image" content="images/saya-logo.webp" />
+    <!-- logo -->
+    <link rel="icon" href="images/saya-icon.webp" type="image/x-icon" />
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://sayayazilim.com" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
+    <!-- CSS ve Font Awesome -->
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header Bölümü -->
+    <header role="banner">
+      <nav class="navbar" role="navigation" aria-label="Ana menü">
+        <div class="container">
+          <div class="logo">
+            <a href="/" aria-label="Ana sayfaya git">
+              <img
+                src="images/saya-logo.webp"
+                alt="Saya Yazılım Logo"
+                width="200"
+                height="80"
+              />
+            </a>
+          </div>
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            aria-label="Menüyü aç/kapat"
+          >
+            <i class="fas fa-bars" id="menuIcon"></i>
+          </button>
+          <ul class="nav-links" role="menu">
+            <li role="none">
+              <a href="#anasayfa" role="menuitem">Ana Sayfa</a>
+            </li>
+            <li role="none">
+              <a href="#hizmetler" role="menuitem">Hizmetler</a>
+            </li>
+            <li role="none">
+              <a href="#hakkimizda" role="menuitem">Hakkımızda</a>
+            </li>
+            <li role="none">
+              <a href="#projeler" role="menuitem">Projeler</a>
+            </li>
+            <li role="none">
+              <a href="#iletisim" role="menuitem">İletişim</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+      <!-- Hero Bölümü -->
+      <section id="anasayfa" class="hero" aria-labelledby="hero-title">
+        <div class="container">
+          <div class="hero-content">
+            <h1 id="hero-title">Teknoloji ile Geleceği Şekillendiriyoruz</h1>
+            <div class="changing-text" aria-live="polite">
+              <p class="text-slide active">
+                Modern çözümler, yenilikçi yaklaşımlar ve profesyonel hizmet
+                anlayışı
+              </p>
+              <p class="text-slide">
+                Müşteri odaklı çözümler ve kesintisiz teknik destek
+              </p>
+              <p class="text-slide">
+                20 yıllık deneyim ile yazılım dünyasında güvenilir çözüm
+                ortağınız
+              </p>
+            </div>
+            <a href="#iletisim" class="btn" role="button"
+              >Bizimle İletişime Geçin</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Hizmetler Bölümü -->
+      <section id="hizmetler" class="services" aria-labelledby="services-title">
+        <div class="container">
+          <h2 id="services-title" class="section-title">Hizmetlerimiz</h2>
+          <div class="services-grid">
+            <div class="service-card" aria-label="Web Geliştirme">
+              <i class="fas fa-laptop-code"></i>
+              <h3>Web Geliştirme</h3>
+              <p>Modern ve responsive web siteleri geliştiriyoruz.</p>
+            </div>
+            <div class="service-card" aria-label="Mobil Uygulama">
+              <i class="fas fa-mobile-alt"></i>
+              <h3>Mobil Uygulama</h3>
+              <p>iOS ve Android için native uygulamalar.</p>
+            </div>
+            <div class="service-card" aria-label="Özel Yazılım Çözümleri">
+              <i class="fas fa-server"></i>
+              <h3>Özel Yazılım Çözümleri</h3>
+              <p>Özel yazılım çözümleri ve danışmanlık.</p>
+            </div>
+            <div class="service-card" aria-label="İşletme Uygulamaları">
+              <i class="fas fa-server"></i>
+              <h3>İşletme Uygulamaları</h3>
+              <p>Özel yazılım çözümleri ve danışmanlık.</p>
+            </div>
+            <div class="service-card" aria-label="Kurumsal Yazılım Destekleri">
+              <i class="fas fa-server"></i>
+              <h3>Kurumsal Yazılım Destekleri</h3>
+              <p>Özel yazılım çözümleri ve danışmanlık.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hakkımızda Bölümü -->
+      <section id="hakkimizda" class="about" aria-labelledby="about-title">
+        <div class="container">
+          <h2 id="about-title" class="section-title">Hakkımızda</h2>
+
+          <div class="stats">
+            <div class="stat-item">
+              <h3>100+</h3>
+              <p>Tamamlanan Proje</p>
+            </div>
+            <div class="stat-item">
+              <h3>50+</h3>
+              <p>Mutlu Müşteri</p>
+            </div>
+            <div class="stat-item">
+              <h3>20+</h3>
+              <p>Yıllık Deneyim</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slider Bölümü -->
+      <section class="slider-section">
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img
+                src="images/slider/slide1.jpg"
+                alt="Proje Görsel 1"
+                width="300"
+                height="200"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="images/slider/slide2.jpg"
+                alt="Proje Görsel 2"
+                width="300"
+                height="200"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="images/slider/slide3.jpg"
+                alt="Proje Görsel 3"
+                width="300"
+                height="200"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="images/slider/slide4.jpg"
+                alt="Proje Görsel 4"
+                width="300"
+                height="200"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="images/slider/slide5.jpg"
+                alt="Proje Görsel 5"
+                width="300"
+                height="200"
+              />
+            </div>
+            <!-- Kopyalanmış slideler (sonsuz döngü için) -->
+            <div class="slide">
+              <img
+                src="images/slider/slide1.jpg"
+                alt="Proje Görsel 1"
+                width="300"
+                height="200"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="images/slider/slide2.jpg"
+                alt="Proje Görsel 2"
+                width="300"
+                height="200"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="images/slider/slide3.jpg"
+                alt="Proje Görsel 3"
+                width="300"
+                height="200"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="images/slider/slide4.jpg"
+                alt="Proje Görsel 4"
+                width="300"
+                height="200"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="images/slider/slide5.jpg"
+                alt="Proje Görsel 5"
+                width="300"
+                height="200"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- İletişim Bölümü -->
+      <section id="iletisim" class="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <h2 id="contact-title" class="section-title">İletişim</h2>
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Adres: İstanbul, Türkiye</p>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <p>Telefon: +90 (XXX) XXX XX XX</p>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <p>E-posta: info@sayayazilim.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h3>SAYA YAZILIM</h3>
+          </div>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Saya Yazılım. Tüm hakları saklıdır.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Saya Yazılım",
+        "url": "https://sayayazilim.com",
+        "logo": "https://sayayazilim.com/images/saya-logo.webp",
+        "description": "Profesyonel yazılım çözümleri ve teknoloji danışmanlığı hizmetleri",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Antalya",
+          "addressCountry": "TR"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+90-XXX-XXX-XXXX",
+          "contactType": "customer service"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/company/saya-yazilim",
+          "https://twitter.com/sayayazilim",
+          "https://www.instagram.com/sayayazilim"
+        ]
+      }
+    </script>
+
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
