@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projelerimiz - Saya Yazılım</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/projeler.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header role="banner">
+      <nav class="navbar" role="navigation" aria-label="Ana menü">
+        <div class="container">
+          <div class="logo">
+            <a href="/" aria-label="Ana sayfaya git">
+              <img
+                src="images/saya-logo.webp"
+                alt="Saya Yazılım Logo"
+                width="200"
+                height="80"
+              />
+            </a>
+          </div>
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            aria-label="Menüyü aç/kapat"
+          >
+            <i class="fas fa-bars" id="menuIcon"></i>
+          </button>
+          <ul class="nav-links" role="menu">
+            <li role="none">
+              <a href="index.html" role="menuitem">Ana Sayfa</a>
+            </li>
+            <li role="none">
+              <a href="index.html#hizmetler" role="menuitem">Hizmetlerimiz</a>
+            </li>
+            <li role="none">
+              <a href="index.html#projeler" role="menuitem">Projelerimiz</a>
+            </li>
+            <li role="none">
+              <a href="index.html#iletisim" role="menuitem">İletişim</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="projects-page">
+      <div class="container">
+        <h1 class="page-title">Projelerimiz</h1>
+        <div class="projects-grid">
+          <!-- Proje 1 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/projects/project1.jpg"
+                alt="E-Ticaret Platformu"
+                width="350"
+                height="250"
+              />
+            </div>
+            <div class="project-content">
+              <h3>E-Ticaret Platformu</h3>
+              <p>
+                Modern ve kullanıcı dostu e-ticaret çözümü. Özelleştirilebilir
+                arayüz ve gelişmiş yönetim paneli.
+              </p>
+              <div class="project-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+              </div>
+              <a href="iletisim.html" class="project-button"
+                >Detaylı Bilgi İçin İletişime Geçin</a
+              >
+            </div>
+          </div>
+
+          <!-- Proje 2 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/projects/project2.jpg"
+                alt="Mobil Uygulama"
+                width="350"
+                height="250"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Mobil Uygulama</h3>
+              <p>
+                iOS ve Android için geliştirilmiş native uygulama. Kullanıcı
+                deneyimi odaklı tasarım.
+              </p>
+              <div class="project-tech">
+                <span>Flutter</span>
+                <span>Firebase</span>
+                <span>REST API</span>
+              </div>
+              <a href="iletisim.html" class="project-button"
+                >Detaylı Bilgi İçin İletişime Geçin</a
+              >
+            </div>
+          </div>
+
+          <!-- Proje 3 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/projects/project3.jpg"
+                alt="Kurumsal Yazılım"
+                width="350"
+                height="250"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Kurumsal Yazılım</h3>
+              <p>
+                Özelleştirilmiş işletme yönetim sistemi. Modüler yapı ve
+                kapsamlı raporlama.
+              </p>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>Django</span>
+                <span>PostgreSQL</span>
+              </div>
+              <a href="iletisim.html" class="project-button"
+                >Detaylı Bilgi İçin İletişime Geçin</a
+              >
+            </div>
+          </div>
+
+          <!-- Proje 4 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/projects/project4.jpg"
+                alt="CRM Sistemi"
+                width="350"
+                height="250"
+              />
+            </div>
+            <div class="project-content">
+              <h3>CRM Sistemi</h3>
+              <p>
+                Müşteri ilişkileri yönetim sistemi. Entegre iletişim ve takip
+                araçları.
+              </p>
+              <div class="project-tech">
+                <span>Vue.js</span>
+                <span>Laravel</span>
+                <span>MySQL</span>
+              </div>
+              <a href="iletisim.html" class="project-button"
+                >Detaylı Bilgi İçin İletişime Geçin</a
+              >
+            </div>
+          </div>
+
+          <!-- Proje 5 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/projects/project5.jpg"
+                alt="B2B Portal"
+                width="350"
+                height="250"
+              />
+            </div>
+            <div class="project-content">
+              <h3>B2B Portal</h3>
+              <p>
+                İşletmeler arası ticaret portalı. Gelişmiş sipariş ve stok
+                yönetimi.
+              </p>
+              <div class="project-tech">
+                <span>Angular</span>
+                <span>.NET Core</span>
+                <span>SQL Server</span>
+              </div>
+              <a href="iletisim.html" class="project-button"
+                >Detaylı Bilgi İçin İletişime Geçin</a
+              >
+            </div>
+          </div>
+
+          <!-- Proje 6 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/projects/project6.jpg"
+                alt="Rezervasyon Sistemi"
+                width="350"
+                height="250"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Rezervasyon Sistemi</h3>
+              <p>
+                Online rezervasyon ve randevu yönetim sistemi. Çoklu şube
+                desteği.
+              </p>
+              <div class="project-tech">
+                <span>React Native</span>
+                <span>Express.js</span>
+                <span>MongoDB</span>
+              </div>
+              <a href="iletisim.html" class="project-button"
+                >Detaylı Bilgi İçin İletişime Geçin</a
+              >
+            </div>
+          </div>
+
+          <!-- Proje 7 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/projects/project7.jpg"
+                alt="İnsan Kaynakları Yazılımı"
+                width="350"
+                height="250"
+              />
+            </div>
+            <div class="project-content">
+              <h3>İK Yazılımı</h3>
+              <p>
+                Kapsamlı insan kaynakları yönetim sistemi. Performans ve izin
+                takibi.
+              </p>
+              <div class="project-tech">
+                <span>Vue.js</span>
+                <span>Spring Boot</span>
+                <span>PostgreSQL</span>
+              </div>
+              <a href="iletisim.html" class="project-button"
+                >Detaylı Bilgi İçin İletişime Geçin</a
+              >
+            </div>
+          </div>
+
+          <!-- Proje 8 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/projects/project8.jpg"
+                alt="Analitik Dashboard"
+                width="350"
+                height="250"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Analitik Dashboard</h3>
+              <p>
+                Gerçek zamanlı veri analizi ve raporlama platformu.
+                Özelleştirilebilir grafikler.
+              </p>
+              <div class="project-tech">
+                <span>D3.js</span>
+                <span>Node.js</span>
+                <span>Redis</span>
+              </div>
+              <a href="iletisim.html" class="project-button"
+                >Detaylı Bilgi İçin İletişime Geçin</a
+              >
+            </div>
+          </div>
+
+          <!-- Proje 9 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/projects/project9.jpg"
+                alt="Sosyal Medya Uygulaması"
+                width="350"
+                height="250"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Sosyal Medya App</h3>
+              <p>
+                Özel sosyal medya platformu. Gerçek zamanlı mesajlaşma ve içerik
+                paylaşımı.
+              </p>
+              <div class="project-tech">
+                <span>React</span>
+                <span>GraphQL</span>
+                <span>MongoDB</span>
+              </div>
+              <a href="iletisim.html" class="project-button"
+                >Detaylı Bilgi İçin İletişime Geçin</a
+              >
+            </div>
+          </div>
+
+          <!-- Proje 10 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/projects/project10.jpg"
+                alt="Eğitim Platformu"
+                width="350"
+                height="250"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Eğitim Platformu</h3>
+              <p>
+                Online eğitim ve sınav sistemi. Canlı ders ve içerik yönetimi.
+              </p>
+              <div class="project-tech">
+                <span>Next.js</span>
+                <span>Django</span>
+                <span>PostgreSQL</span>
+              </div>
+              <a href="iletisim.html" class="project-button"
+                >Detaylı Bilgi İçin İletişime Geçin</a
+              >
+            </div>
+          </div>
+
+          <!-- Proje 11 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/projects/project11.jpg"
+                alt="Finans Yazılımı"
+                width="350"
+                height="250"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Finans Yazılımı</h3>
+              <p>
+                Finansal işlem ve raporlama sistemi. Çoklu para birimi desteği.
+              </p>
+              <div class="project-tech">
+                <span>Angular</span>
+                <span>Java Spring</span>
+                <span>Oracle</span>
+              </div>
+              <a href="iletisim.html" class="project-button"
+                >Detaylı Bilgi İçin İletişime Geçin</a
+              >
+            </div>
+          </div>
+
+          <!-- Proje 12 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/projects/project12.jpg"
+                alt="Lojistik Takip"
+                width="350"
+                height="250"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Lojistik Takip</h3>
+              <p>
+                Gerçek zamanlı araç ve kargo takip sistemi. GPS entegrasyonu.
+              </p>
+              <div class="project-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+              </div>
+              <a href="iletisim.html" class="project-button"
+                >Detaylı Bilgi İçin İletişime Geçin</a
+              >
+            </div>
+          </div>
+
+          <!-- Proje 13 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/projects/project13.jpg"
+                alt="Otel Yönetimi"
+                width="350"
+                height="250"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Otel Yönetimi</h3>
+              <p>
+                Kapsamlı otel yönetim sistemi. Rezervasyon ve muhasebe
+                entegrasyonu.
+              </p>
+              <div class="project-tech">
+                <span>Vue.js</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+              </div>
+              <a href="iletisim.html" class="project-button"
+                >Detaylı Bilgi İçin İletişime Geçin</a
+              >
+            </div>
+          </div>
+
+          <!-- Proje 14 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/projects/project14.jpg"
+                alt="Sağlık Portalı"
+                width="350"
+                height="250"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Sağlık Portalı</h3>
+              <p>
+                Online sağlık hizmetleri platformu. Hasta ve doktor yönetimi.
+              </p>
+              <div class="project-tech">
+                <span>React</span>
+                <span>.NET Core</span>
+                <span>SQL Server</span>
+              </div>
+              <a href="iletisim.html" class="project-button"
+                >Detaylı Bilgi İçin İletişime Geçin</a
+              >
+            </div>
+          </div>
+
+          <!-- Proje 15 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/projects/project15.jpg"
+                alt="Restoran Otomasyonu"
+                width="350"
+                height="250"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Restoran Otomasyonu</h3>
+              <p>
+                Restoran yönetim ve sipariş sistemi. Mobil uygulama
+                entegrasyonu.
+              </p>
+              <div class="project-tech">
+                <span>Flutter</span>
+                <span>Firebase</span>
+                <span>Node.js</span>
+              </div>
+              <a href="iletisim.html" class="project-button"
+                >Detaylı Bilgi İçin İletişime Geçin</a
+              >
+            </div>
+          </div>
+
+          <!-- Proje 16 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/projects/project16.jpg"
+                alt="Emlak Portalı"
+                width="350"
+                height="250"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Emlak Portalı</h3>
+              <p>İlan ve gayrimenkul yönetim sistemi. Harita entegrasyonu.</p>
+              <div class="project-tech">
+                <span>Next.js</span>
+                <span>Python</span>
+                <span>PostgreSQL</span>
+              </div>
+              <a href="iletisim.html" class="project-button"
+                >Detaylı Bilgi İçin İletişime Geçin</a
+              >
+            </div>
+          </div>
+
+          <!-- Proje 17 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/projects/project17.jpg"
+                alt="Spor Merkezi"
+                width="350"
+                height="250"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Spor Merkezi</h3>
+              <p>
+                Üyelik ve antrenman takip sistemi. Online ödeme entegrasyonu.
+              </p>
+              <div class="project-tech">
+                <span>React Native</span>
+                <span>Laravel</span>
+                <span>MySQL</span>
+              </div>
+              <a href="iletisim.html" class="project-button"
+                >Detaylı Bilgi İçin İletişime Geçin</a
+              >
+            </div>
+          </div>
+
+          <!-- Proje 18 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/projects/project18.jpg"
+                alt="Kütüphane Sistemi"
+                width="350"
+                height="250"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Kütüphane Sistemi</h3>
+              <p>Dijital kütüphane ve kaynak yönetimi. QR kod entegrasyonu.</p>
+              <div class="project-tech">
+                <span>Vue.js</span>
+                <span>Django</span>
+                <span>PostgreSQL</span>
+              </div>
+              <a href="iletisim.html" class="project-button"
+                >Detaylı Bilgi İçin İletişime Geçin</a
+              >
+            </div>
+          </div>
+
+          <!-- Proje 19 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/projects/project19.jpg"
+                alt="Etkinlik Yönetimi"
+                width="350"
+                height="250"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Etkinlik Yönetimi</h3>
+              <p>
+                Online bilet satış ve etkinlik yönetim platformu. Takvim
+                entegrasyonu.
+              </p>
+              <div class="project-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+              </div>
+              <a href="iletisim.html" class="project-button"
+                >Detaylı Bilgi İçin İletişime Geçin</a
+              >
+            </div>
+          </div>
+
+          <!-- Proje 20 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/projects/project20.jpg"
+                alt="İş Portalı"
+                width="350"
+                height="250"
+              />
+            </div>
+            <div class="project-content">
+              <h3>İş Portalı</h3>
+              <p>İş ilanı ve başvuru yönetim sistemi. CV oluşturma aracı.</p>
+              <div class="project-tech">
+                <span>Angular</span>
+                <span>Spring Boot</span>
+                <span>PostgreSQL</span>
+              </div>
+              <a href="iletisim.html" class="project-button"
+                >Detaylı Bilgi İçin İletişime Geçin</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img
+              src="images/saya-logo.webp"
+              alt="Saya Yazılım Logo"
+              width="200"
+              height="80"
+            />
+          </div>
+          <div class="footer-links">
+            <h4>Kurumsal</h4>
+            <ul>
+              <li><a href="hakkimizda.html">Hakkımızda</a></li>
+              <li><a href="misyon-vizyon.html">Misyon & Vizyon</a></li>
+              <li><a href="ekibimiz.html">Ekibimiz</a></li>
+            </ul>
+          </div>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Saya Yazılım. Tüm hakları saklıdır.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

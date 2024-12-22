@@ -1,0 +1,119 @@
+/* Ekip Sayfası Stilleri */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.team-member {
+  background: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+.member-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover .member-image img {
+  transform: scale(1.1);
+}
+
+.member-info {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.member-info h3 {
+  color: var(--dark);
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.member-title {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.member-desc {
+  color: var(--gray);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.member-social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.member-social a {
+  color: var(--dark);
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.member-social a:hover {
+  color: var(--primary-color);
+}
+
+/* Responsive Tasarım */
+@media (max-width: 992px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 2rem auto;
+  }
+
+  .member-image {
+    height: 250px;
+  }
+
+  .member-info {
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .member-image {
+    height: 200px;
+  }
+
+  .member-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .member-title {
+    font-size: 0.9rem;
+  }
+
+  .member-desc {
+    font-size: 0.85rem;
+  }
+}
