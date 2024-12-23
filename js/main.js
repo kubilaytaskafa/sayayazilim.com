@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // 3 saniyede bir değiştir
-    setInterval(nextSlide, 3000);
+    setInterval(nextSlide, 5000);
   }
 
   // Sayfa yüklendiğinde başlat

@@ -15,18 +15,18 @@
 }
 
 .team-member:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
 }
 
 .member-image {
   width: 100%;
-  height: 300px;
+  height: auto;
   overflow: hidden;
 }
 
 .member-image img {
   width: 100%;
-  height: 100%;
+  height: 300px;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
@@ -41,15 +41,13 @@
 }
 
 .member-info h3 {
-  color: var(--dark);
-  font-size: 1.3rem;
   margin-bottom: 0.5rem;
+  color: var(--dark);
 }
 
 .member-title {
-  color: var(--primary-color);
-  font-weight: 600;
-  font-size: 1rem;
+  color: var(--gray);
+  font-size: 0.9rem;
   margin-bottom: 1rem;
 }
 
@@ -70,6 +68,7 @@
   color: var(--dark);
   font-size: 1.2rem;
   transition: color 0.3s ease;
+  text-decoration: none;
 }
 
 .member-social a:hover {
@@ -80,7 +79,10 @@
 @media (max-width: 992px) {
   .team-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+  }
+
+  .member-image img {
+    height: 250px;
   }
 }
 
@@ -92,28 +94,25 @@
   }
 
   .member-image {
-    height: 250px;
+    height: 220px;
   }
 
   .member-info {
-    padding: 1.2rem;
+    padding: 1rem;
   }
 }
 
 @media (max-width: 576px) {
-  .member-image {
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .member-image img {
     height: 200px;
   }
 
-  .member-info h3 {
-    font-size: 1.2rem;
-  }
-
-  .member-title {
-    font-size: 0.9rem;
-  }
-
-  .member-desc {
-    font-size: 0.85rem;
+  .member-info {
+    padding: 1rem;
   }
 }
