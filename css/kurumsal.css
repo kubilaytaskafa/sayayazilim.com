@@ -1,20 +1,24 @@
 /* Kurumsal Sayfalar Genel Stiller */
 .kurumsal-page {
-  padding: 120px 0 80px;
+  padding: 120px 0 70px;
   background-color: var(--light);
 }
 
 .page-title {
-  color: var(--primary-color);
-  font-size: 2.5rem;
   text-align: center;
+  font-size: 2.5rem;
+  color: var(--dark);
   margin-bottom: 3rem;
 }
 
 .content-section {
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 2fr 1fr;
   gap: 3rem;
+  align-items: start;
+}
+
+.content-text {
   background-color: var(--white);
   padding: 2rem;
   border-radius: 10px;
@@ -23,44 +27,30 @@
 
 .content-text h2 {
   color: var(--primary-color);
+  margin-bottom: 1rem;
   font-size: 1.8rem;
-  margin: 2rem 0 1rem;
-}
-
-.content-text h2:first-child {
-  margin-top: 0;
 }
 
 .content-text p {
+  margin-bottom: 1.5rem;
   color: var(--gray);
   line-height: 1.8;
-  margin-bottom: 1.5rem;
 }
 
 .content-text ul {
-  list-style-type: none;
-  padding: 0;
+  list-style-position: inside;
+  margin-bottom: 1.5rem;
+  color: var(--gray);
 }
 
 .content-text ul li {
-  color: var(--gray);
-  margin-bottom: 0.8rem;
-  padding-left: 1.5rem;
-  position: relative;
-}
-
-.content-text ul li::before {
-  content: "•";
-  color: var(--primary-color);
-  position: absolute;
-  left: 0;
-  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
 }
 
 .content-image {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  position: sticky;
+  top: 100px;
 }
 
 .content-image img {
@@ -70,10 +60,36 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Tasarım */
+/* Responsive Düzenlemeler */
+@media (max-width: 1200px) {
+  .page-title {
+    font-size: 2.2rem;
+  }
+
+  .content-text h2 {
+    font-size: 1.6rem;
+  }
+}
+
 @media (max-width: 992px) {
+  .content-section {
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2rem;
+  }
+
+  .content-text {
+    padding: 1.5rem;
+  }
+
+  .page-title {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
   .kurumsal-page {
-    padding: 100px 0 60px;
+    padding: 100px 0 50px;
   }
 
   .content-section {
@@ -82,51 +98,59 @@
   }
 
   .content-image {
+    position: static;
     order: -1;
   }
 
-  .content-image img {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .kurumsal-page {
-    padding: 80px 0 40px;
-  }
-
   .page-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 2rem;
   }
 
-  .content-section {
-    padding: 1.5rem;
+  .content-text h2 {
+    font-size: 1.4rem;
   }
 
-  .content-text h2 {
-    font-size: 1.5rem;
+  .content-text p {
+    font-size: 0.95rem;
   }
 }
 
 @media (max-width: 576px) {
   .kurumsal-page {
-    padding: 60px 0 30px;
+    padding: 90px 0 40px;
   }
 
   .page-title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
   }
 
-  .content-section {
-    padding: 1rem;
+  .content-text {
+    padding: 1.2rem;
   }
 
   .content-text h2 {
     font-size: 1.3rem;
   }
 
-  .content-text p {
+  .content-text p,
+  .content-text ul li {
     font-size: 0.9rem;
+  }
+}
+
+/* Mobil Yatay Görünüm için Özel Ayarlar */
+@media (max-height: 480px) and (orientation: landscape) {
+  .kurumsal-page {
+    padding: 80px 0 30px;
+  }
+
+  .content-section {
+    gap: 1.5rem;
+  }
+
+  .content-text {
+    padding: 1rem;
   }
 }
