@@ -25,6 +25,8 @@ body {
 }
 
 .container {
+  scroll-snap-type: y mandatory;
+  scroll-padding: 50px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
